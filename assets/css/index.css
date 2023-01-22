@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --height-header: 80px;
+  --max-width: 1200px;
+}
+
+html {
+  margin: 0;
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.8rem;
+  margin: 0;
+  padding: 0;
+}
+
+main {}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  margin: 20px 0;
+  font-size: 4rem;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  max-width: var(--max-width);
+  margin: var(--height-header) auto;
+  padding: 0 20px;
+}
+
+p {
+  margin: 10px 0;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}

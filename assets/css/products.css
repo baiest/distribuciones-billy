@@ -1,0 +1,21 @@
+.products {
+  display: grid;
+  padding: 10px;
+  justify-content: center;
+  height: 100%;
+  grid-template-columns: repeat(auto-fit, 120px);
+  grid-template-rows: repeat(auto-fit, 120px);
+  gap: 10px;
+}
+
+@media screen and (min-width: 480px) {
+  .products {
+    grid-template-columns: repeat(auto-fit, 220px);
+    grid-template-rows: repeat(auto-fit, 220px);
+    gap: 20px;
+  }
+  .products-item:nth-child(1) {
+    grid-area: 1/1/3/3;
+    opacity: .1;
+  }
+}

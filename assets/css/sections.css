@@ -1,0 +1,56 @@
+#about-us {
+  max-width: inherit;
+  position: relative;
+  margin-bottom: 0;
+}
+
+.about-us__container {
+  margin: var(--height-header) auto;
+  max-width: var(--max-width);
+  position: relative;
+  width: 100%;
+}
+
+.about-us__container div {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.about-us__container div article::before {
+  content: '';
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  background: #080808;
+  box-shadow: -2px 2px 4px var(--shadow-color);
+}
+
+.about-us__container div article {
+  max-width: 340px;
+  position: relative;
+  background: #eee;
+  padding: 20px;
+  box-shadow: -8px 8px 8px #41404044;
+}
+
+#banner .background,
+#about-us .background {
+  background: url('../images/texture-wood.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  opacity: .8;
+}
